@@ -31,7 +31,7 @@ class TaskConntrollerController extends AbstractController
     /**
      * @Route("/tasks/{id}", name="task.delete", methods="DELETE")
      */
-    public function deleteUser(Task $task)
+    public function deleteTask(Task $task)
     {
         $this->em->remove($task);
 		$this->em->flush();
